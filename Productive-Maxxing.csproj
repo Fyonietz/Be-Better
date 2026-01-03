@@ -7,4 +7,8 @@
     <RootNamespace>Productive_Maxxing</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Mysql.data" Version="9.5.0" />
+  </ItemGroup>
+
 </Project>
