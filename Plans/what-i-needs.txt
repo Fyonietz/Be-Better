@@ -1,0 +1,42 @@
+Money
+
+Kategori
+-Kebutuhan Rutin
+  -20k DiSplit
+  -Bensin 5k/Hari(30k Perminggu)
+  -Wifi 3k/Hari(100k Perbulan)
+  -Jajan 5k/Hari
+  -Tabungan 5k(12 Hari=60k)
+-Tabungan Masa Depan 60k DiSplit 50 30 20
+  -Dana Pendidikan = 30k / 2 minggu
+  -Dana Darurat = 18k / 2 minggu
+  -Pengembangan Diri = 12k / 2 minggu
+
+
+MVP
+-Dibagi 2 Kebutuhan dan Tabungan
+-Pemasukan
+-Pengeluaran
+-Transaksi
+-Total Saldo
+-Ringkasan Pengeluaran
+
+Faith (Quran And Hadits)
+-Target(On Going,Future)
+-Total Hafalan
+-Timer 
+
+Body (Progressive Overload)
+-Jadwal Push Pull Legs and Shoulder
+-Session Movement
+-Current Form Of Split
+-Tracking
+
+Skill
+-Daftar Skill On Learning
+-Tracking Skill On Learning
+-Note or Resume About Skill
+
+Fun
+-Game That I Want To Play
+-Movies I Want Watch

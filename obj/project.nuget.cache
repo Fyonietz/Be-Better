@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RdvRe3RHuaU=",
+  "success": true,
+  "projectFilePath": "/home/fyonietz/Repo/Productive-Maxxing/Productive-Maxxing.csproj",
+  "expectedPackageFiles": [
+    "/home/fyonietz/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

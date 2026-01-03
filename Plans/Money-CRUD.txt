@@ -1,0 +1,28 @@
+ Kebutuhan JSON{
+    id:int
+    nama:char
+    nominal:real
+    notes:string
+  }
+
+Tabungan JSON{
+    id:int
+    nama:char 
+    nominal:real
+    notes:string
+  }
+
+Pemasukan JSON{
+    id:int 
+    date:date
+    nominal:int/double
+  }
+
+Pengeluaran/Transaksi JSON{
+    id:int 
+    date:date
+    nominal:int/double
+    kategori:Kebutuhan or Tabungan 
+    sub-kategori:ie(Bensin)
+    notes:string
+}
