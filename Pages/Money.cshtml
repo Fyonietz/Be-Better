@@ -1,7 +1,32 @@
 @page
 @model MoneyModel
+@using System.Globalization
 @{
-  ViewData["Title"] = "Money Management";
+    ViewData["Title"] = "Money Management"; 
+    var culture = new CultureInfo("id-ID"); // Indonesia
 }
 
+<h2>@ViewData["Title"]</h2>
+
 <p>@Model.Greet</p>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Nominal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kebutuhans in Model.Kebutuhan_List)
+        {
+            <tr>
+                <td>@kebutuhans.id</td>
+                <td>@kebutuhans.nama</td>
+                <td>@kebutuhans.nominal.ToString("C", culture)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
