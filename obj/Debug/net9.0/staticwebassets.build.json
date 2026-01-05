@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lTTp9OeKrd6PsCZTMlDyTc2G7MF1y1feA0Uqy9FN10w=",
+  "Hash": "QQYALyz3JTNsCrgENg/Kae2mgwYVPblbrUlYn7UPVjo=",
   "Source": "Productive-Maxxing",
   "BasePath": "_content/Productive-Maxxing",
   "Mode": "Default",
@@ -584,12 +584,12 @@
       "OriginalItemSpec": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-lugek5hnai.gz",
+      "Identity": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz",
       "SourceId": "Productive-Maxxing",
       "SourceType": "Discovered",
       "ContentRoot": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Productive-Maxxing",
-      "RelativePath": "css/site#[.{fingerprint=lugek5hnai}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=2jcz2cj610}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -598,8 +598,8 @@
       "RelatedAsset": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lb0jssabxu",
-      "Integrity": "n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g=",
+      "Fingerprint": "rwyxqwi3mg",
+      "Integrity": "BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/css/site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lugek5hnai",
-      "Integrity": "zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=",
+      "Fingerprint": "2jcz2cj610",
+      "Integrity": "LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-lugek5hnai.gz",
+      "Route": "css/site.2jcz2cj610.css",
+      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.000498256104"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "2006"
         },
         {
           "Name": "ETag",
-          "Value": "\"n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g=\""
+          "Value": "\"BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,18 +2772,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "W/\"LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "2jcz2cj610"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.2jcz2cj610.css",
       "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2793,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "637"
+          "Value": "7584"
         },
         {
           "Name": "Content-Type",
@@ -2801,121 +2809,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "\"LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-lugek5hnai.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-lugek5hnai.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003194888179"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "2jcz2cj610"
         },
         {
           "Name": "label",
@@ -2923,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/css/site.css",
+      "Route": "css/site.2jcz2cj610.css.gz",
+      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "637"
+          "Value": "2006"
         },
         {
           "Name": "Content-Type",
@@ -2946,56 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "\"BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lugek5hnai"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.lugek5hnai.css.gz",
-      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-lugek5hnai.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 03 Jan 2026 12:09:03 GMT"
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "2jcz2cj610"
         },
         {
           "Name": "label",
@@ -3021,7 +2884,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-n4te0btuR7bRk4mRh2N5HuBqCrDu5bjitpFCR/Qw63g="
+          "Value": "sha256-BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000498256104"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2006"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 Jan 2026 14:50:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BRcJ3b6uWRau8nOSteQqj1Fi1rYIAcgTDDbaj+Z+IXY="
         }
       ]
     },

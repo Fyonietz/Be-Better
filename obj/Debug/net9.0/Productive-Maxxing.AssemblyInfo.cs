@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Productive-Maxxing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88ebdb74e523c99f604f94002f551e9cc2a1bbd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa83020cde0524602dca4bba98198fba0472857c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Productive-Maxxing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Productive-Maxxing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

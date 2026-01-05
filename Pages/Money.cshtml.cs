@@ -2,21 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySqlConnector;
 namespace Productive_Maxxing.Pages;
-
-public class MoneyModel:PageModel{
-  private readonly ILogger<MoneyModel> _logger;
+public class MoneyFunctions{
   private readonly Db _db;
-
-  public List<Kebutuhan> Kebutuhan_List {get;private set;} = new();
-  public MoneyModel(Db db,ILogger<MoneyModel> logger){
+  public MoneyFunctions(Db db){
     _db = db;
-    _logger = logger;
   }
-  public string Greet { get; set; } = "";
- 
-  public async Task OnGetAsync(){
-
-    Greet= "Welcome To Money Management Page";
+  //Get
+  public async Task<List<Kebutuhan>> DisplayKebutuhanLists(){
+    var Kebutuhan_List = new List<Kebutuhan>();
     using var conn = _db.GetConnection();
     await conn.OpenAsync();
 
@@ -28,9 +21,56 @@ public class MoneyModel:PageModel{
       Kebutuhan_List.Add(new Kebutuhan{
         id = reader.GetInt32("id"),
         nama = reader.GetString("nama"),
-        nominal = reader.GetDouble("nominal")
+        nominal = reader.GetDouble("nominal"),
+        notes = reader.GetString("notes")
       });
     }
+    return Kebutuhan_List;
+  }
+  //Post 
+  public async Task TambahKebutuhan(Kebutuhan kebutuhan){
+    using var conn = _db.GetConnection();
+    await conn.OpenAsync();
+
+    using var cmd = new MySqlCommand(
+        "INSERT INTO Kebutuhan(nama,nominal,notes) VALUES(@nama,@nominal,@notes)"
+        ,conn);
+    cmd.Parameters.AddWithValue("@nama",kebutuhan.nama);
+    cmd.Parameters.AddWithValue("@nominal",kebutuhan.nominal);
+    cmd.Parameters.AddWithValue("@notes",kebutuhan.notes ?? "");
+
+    await cmd.ExecuteNonQueryAsync();
+  }
+}
+public class MoneyModel:PageModel{
+  private readonly ILogger<MoneyModel> _logger;
+  private readonly MoneyFunctions _moneyFunctions;
+  public List<Kebutuhan> Kebutuhan_List {get;private set;} = new();
+  [BindProperty]
+  public Kebutuhan kebutuhan {get;set;}=new();
+  public MoneyModel(
+  ILogger<MoneyModel> logger,
+  MoneyFunctions moneyfunctions
+  ){
+  _logger = logger;
+  _moneyFunctions = moneyfunctions;
+  }
+  public string Greet { get; set; } = "";
+ 
+  public async Task OnGetAsync(){
+
+    Greet= "Welcome To Money Management Page";
+    Kebutuhan_List = await _moneyFunctions.DisplayKebutuhanLists();
+  }
+
+  public async Task<IActionResult> OnPostAsync(){
+    if(!ModelState.IsValid){
+
+    Kebutuhan_List = await _moneyFunctions.DisplayKebutuhanLists();
+    return Page();
+    }
+    await _moneyFunctions.TambahKebutuhan(kebutuhan);
+    return RedirectToPage();
   }
 }
 

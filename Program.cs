@@ -1,9 +1,11 @@
 using MySqlConnector;
+using Productive_Maxxing.Pages;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<Db>();
+builder.Services.AddScoped<MoneyFunctions>();
 
 var app = builder.Build();
 
