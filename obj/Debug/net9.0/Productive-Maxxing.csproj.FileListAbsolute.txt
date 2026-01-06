@@ -37,7 +37,6 @@
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/scopedcss/bundle/Productive-Maxxing.styles.css
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/scopedcss/projectbundle/Productive-Maxxing.bundle.scp.css
-/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-2jcz2cj610.gz
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/dxpnkej8gb-61n19gt1b8.gz
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/pqq9f1x9vt-fr7q2aak1r.gz
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/kxnq244dhb-bqjiyaj88i.gz
@@ -114,5 +113,6 @@
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/Productive-Maxxing.pdb
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/Productive-Maxxing.genruntimeconfig.cache
 /home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/ref/Productive-Maxxing.dll
-/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/v2ltuivohl-33tnw1sxf6.gz
-/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/pnn31wku50-33tnw1sxf6.gz
+/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/g6zclgl3m9-q4rhw74d5w.gz
+/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/v2ltuivohl-rjqgmb9edu.gz
+/home/fyonietz/Repo/Productive-Maxxing/obj/Debug/net9.0/compressed/pnn31wku50-rjqgmb9edu.gz

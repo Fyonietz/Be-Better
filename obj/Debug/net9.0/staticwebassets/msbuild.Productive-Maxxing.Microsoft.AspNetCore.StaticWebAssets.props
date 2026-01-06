@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2jcz2cj610</Fingerprint>
-      <Integrity>LszQp95+mLog9NRiear1pmclCZ3tskKEyN2dk2SGOgU=</Integrity>
+      <Fingerprint>q4rhw74d5w</Fingerprint>
+      <Integrity>ZkA6UPuOyq/OmD77e0qV/9Bqq+5rddOlNvyr36VEzl8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -1134,23 +1134,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productive-Maxxing.33tnw1sxf6.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productive-Maxxing.rjqgmb9edu.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Productive-Maxxing</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Productive-Maxxing</BasePath>
-      <RelativePath>Productive-Maxxing.33tnw1sxf6.bundle.scp.css</RelativePath>
+      <RelativePath>Productive-Maxxing.rjqgmb9edu.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>33tnw1sxf6</Fingerprint>
-      <Integrity>AUndYfhMuXq71RNc01G+ZFQWVZAmoOqm7mDupww2S1A=</Integrity>
+      <Fingerprint>rjqgmb9edu</Fingerprint>
+      <Integrity>mSMnIH+AZaa6ZNPRzCIUcD/RhQiGxhdFVyOGbhm8FA4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productive-Maxxing.33tnw1sxf6.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productive-Maxxing.rjqgmb9edu.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

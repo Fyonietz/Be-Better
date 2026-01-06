@@ -41,6 +41,29 @@ public class MoneyFunctions{
 
     await cmd.ExecuteNonQueryAsync();
   }
+  public async Task DeleteKebutuhan(int id){
+    using var conn = _db.GetConnection();
+    await conn.OpenAsync();
+
+    using var cmd = new MySqlCommand("DELETE FROM Kebutuhan WHERE id=@id",conn);
+    cmd.Parameters.AddWithValue("@id",id);
+
+    await cmd.ExecuteNonQueryAsync();
+  }
+  public async Task UpdateKebutuhan(Kebutuhan kebutuhan){
+    using var conn = _db.GetConnection();
+    await conn.OpenAsync();
+
+    using var cmd = new MySqlCommand("UPDATE Kebutuhan SET nama=@nama,nominal=@nominal,notes=@notes WHERE id=@id",conn);
+    cmd.Parameters.AddWithValue("@id",kebutuhan.id);
+    cmd.Parameters.AddWithValue("@nama",kebutuhan.nama);
+    cmd.Parameters.AddWithValue("@nominal",kebutuhan.nominal);
+    cmd.Parameters.AddWithValue("@notes",kebutuhan.notes);
+
+    await cmd.ExecuteNonQueryAsync();
+
+
+  }
 }
 public class MoneyModel:PageModel{
   private readonly ILogger<MoneyModel> _logger;
@@ -102,6 +125,32 @@ public async Task<JsonResult> OnPostTambahKebutuhan([FromBody] Kebutuhan kebutuh
             });
         }
     }
+  public async Task<JsonResult> OnPostDeleteKebutuhan([FromBody] Kebutuhan kebutuhan){
+    try{
+    await _moneyFunctions.DeleteKebutuhan(kebutuhan.id);
+    return new JsonResult(new 
+            { 
+                success = true, 
+                message = "Data berhasil dihapus" 
+            });
 
+    }catch(Exception ex){
+      _logger.LogError(ex,"Error Deleting Kebutuhan");
+      return new JsonResult(new {success = false,error = ex.Message});
+    }
+  }
+  public async Task<JsonResult> OnPostUpdateKebutuhan([FromBody] Kebutuhan kebutuhan){
+    try{
+      await _moneyFunctions.UpdateKebutuhan(kebutuhan);
+      return new JsonResult(new 
+            { 
+                success = true, 
+                message = "Data berhasil dihapus" 
+            });
+    }catch(Exception ex){
+      _logger.LogError(ex,"Error Update Kebutuhan");
+      return new JsonResult(new {success = false,error = ex.Message});
+    }
+  }
 }
-
+  
