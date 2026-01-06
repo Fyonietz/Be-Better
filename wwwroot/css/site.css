@@ -1,5 +1,7 @@
 /* Minimal Brutalist Design - Light Theme */
-
+html{
+  overflow-y:hidden !important;
+}
 :root {
   /* Core Colors */
   --primary-bg: #ffffff;

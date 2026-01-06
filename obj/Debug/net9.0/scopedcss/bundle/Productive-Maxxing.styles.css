@@ -1,7 +1,30 @@
 /* _content/Productive-Maxxing/Pages/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+/* Make everything minimal */ 
 
+html[b-a97d2772zd]{
+  overflow-y:hidden !important;
+}
+.floating-navbar[b-a97d2772zd],
+.floating-footer[b-a97d2772zd] {
+    min-height: 40px !important;
+    line-height: 1.2;
+}
+
+.floating-navbar .navbar-brand[b-a97d2772zd] {
+    padding: 6px 0 !important;
+    margin-right: 10px;
+}
+
+.floating-navbar .nav-link[b-a97d2772zd] {
+    padding: 8px 12px !important;
+}
+
+.floating-footer[b-a97d2772zd] {
+    min-height: 30px !important;
+    line-height: 1;
+}
+
+/* Rest of your original styles */
 a.navbar-brand[b-a97d2772zd] {
   white-space: normal;
   text-align: center;
@@ -38,12 +61,4 @@ a[b-a97d2772zd] {
 button.accept-policy[b-a97d2772zd] {
   font-size: 1rem;
   line-height: inherit;
-}
-
-.footer[b-a97d2772zd] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
 }

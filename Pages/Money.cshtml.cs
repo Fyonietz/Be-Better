@@ -29,7 +29,7 @@ public class MoneyFunctions{
   }
   //Post 
   public async Task TambahKebutuhan(Kebutuhan kebutuhan){
-    using var conn = _db.GetConnection();
+     using var conn = _db.GetConnection();
     await conn.OpenAsync();
 
     using var cmd = new MySqlCommand(
@@ -62,15 +62,46 @@ public class MoneyModel:PageModel{
     Greet= "Welcome To Money Management Page";
     Kebutuhan_List = await _moneyFunctions.DisplayKebutuhanLists();
   }
-
-  public async Task<IActionResult> OnPostAsync(){
-    if(!ModelState.IsValid){
-
-    Kebutuhan_List = await _moneyFunctions.DisplayKebutuhanLists();
-    return Page();
+  [IgnoreAntiforgeryToken]
+   public async Task<JsonResult> OnGetKebutuhanList()
+    {
+        var list = await _moneyFunctions.DisplayKebutuhanLists();
+        return new JsonResult(list);
     }
-    await _moneyFunctions.TambahKebutuhan(kebutuhan);
-    return RedirectToPage();
-  }
+public async Task<JsonResult> OnPostTambahKebutuhan([FromBody] Kebutuhan kebutuhan)
+    {
+        try
+        {
+            // Validate data
+            if (kebutuhan == null || string.IsNullOrEmpty(kebutuhan.nama))
+            {
+                return new JsonResult(new 
+                { 
+                    success = false, 
+                    error = "Invalid data" 
+                });
+            }
+
+            // Save to database
+            await _moneyFunctions.TambahKebutuhan(kebutuhan);
+
+            // Return success response
+            return new JsonResult(new 
+            { 
+                success = true, 
+                message = "Data berhasil ditambahkan" 
+            });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error adding kebutuhan");
+            return new JsonResult(new 
+            { 
+                success = false, 
+                error = ex.Message 
+            });
+        }
+    }
+
 }
 
